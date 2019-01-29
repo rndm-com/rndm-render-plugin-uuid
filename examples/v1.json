@@ -1,0 +1,49 @@
+{
+  "type": "react-native-View",
+  "props": {
+    "style": {
+      "padding": 10,
+      "backgroundColor": "#000000"
+    },
+    "children": [ {
+      "type": "react-native.View",
+      "props": {
+        "style": {
+
+        },
+        "children": [{
+          "type": "react-native.Text",
+          "props": {
+            "style": {
+              "marginTop": 10,
+              "color": "#ffffff"
+            },
+            "children": "V1 UUID (timestamp): "
+          }
+        }, {
+          "type": "react-native.Text",
+          "props": {
+            "style": {
+              "marginTop": 10,
+              "color": "#ffffff"
+            },
+            "middleware": [{
+              "middleware": "redux.connect",
+              "args": [
+                [{
+                  "to": "children",
+                  "default": {
+                    "isFunc": true,
+                    "type": "uuid.v1",
+                    "args": [],
+                    "execute": [true]
+                  }
+                }]
+              ]
+            }]
+          }
+        }]
+      }
+    }]
+  }
+}

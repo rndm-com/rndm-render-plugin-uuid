@@ -1,0 +1,78 @@
+{
+  "type": "react-native-View",
+  "props": {
+    "style": {
+      "padding": 10,
+      "backgroundColor": "#000000"
+    },
+    "children": [{
+      "type": "react-native.TextInput",
+      "props": {
+        "placeholder": "Version 1",
+        "style": {
+          "margin": 10,
+          "padding": 5,
+          "backgroundColor": "#ffffff"
+        },
+        "middleware": [{
+          "middleware": "redux.connect",
+          "args": [
+            [{
+              "from": "rndm.uuid_example",
+              "to": "value",
+              "default": ""
+            }],
+            [{
+              "prop": "onChangeText",
+              "action": {
+                "type": "RNDM_DID_SET_UUID",
+                "uuid_example": {
+                  "type": "_.identity",
+                  "isFunc": true,
+                  "args": ["$.args.0"],
+                  "execute": [true]
+                }
+              }
+            }]
+          ]
+        }]
+      }
+    }, {
+      "type": "react-native.View",
+      "props": {
+        "children": [{
+          "type": "react-native.Text",
+          "props": {
+            "style": {
+              "marginTop": 10,
+              "color": "#ffffff"
+            },
+            "children": "V3 UUID (Namespace): "
+          }
+        }, {
+          "type": "react-native.Text",
+          "props": {
+            "style": {
+              "marginTop": 10,
+              "color": "#ffffff"
+            },
+            "middleware": [{
+              "middleware": "redux.connect",
+              "args": [
+                [{
+                  "to": "children",
+                  "default": {
+                    "isFunc": true,
+                    "type": "uuid.v3",
+                    "args": ["$.state.rndm.uuid_example"],
+                    "execute": [true]
+                  }
+                }]
+              ]
+            }]
+          }
+        }]
+      }
+    }]
+  }
+}

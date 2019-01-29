@@ -1,0 +1,20 @@
+{
+  "name": "@rndm/render-plugin-uuid",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "description": "RNDM Render Plugin: UUID. UUID generation functionality for RNDM Render",
+  "homepage": "https://github.com/rndm-com/rndm-render-plugin-uuid#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-render-plugin-uuid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-render-plugin-uuid/issues"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2",
+    "validator": "^10.11.0"
+  }
+}
