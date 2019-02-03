@@ -1,14 +1,14 @@
-# RNDM Render Plugin: UUID
+# [RNDM](https://www.rndm.com) Render Plugin: UUID
 
 ## About
 
-This plugin provides the Unique User Identifier generation for the [RNDM Render package](https://github.com/rndm-com/rndm-render).
+This plugin provides the Unique User Identifier generation for the [RNDM Render package](https://www.rndm.com/docs/rndm-render).
 
 This plugin provides RNDM method wrapping for easy serialisation of UUID generation using the awesome [UUID](https://github.com/kelektiv/node-uuid) library
 
 ## Installation
 
-If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) and [RNDM Plugin: Core](https://github.com/rndm-com/rndm-render-plugin-core) package.
+If you have not already done so, then please ensure you have installed the [RNDM Render](https://github.com/rndm-com/rndm-render) and [RNDM Plugin: Core](https://www.rndm.com/docs/rndm-render/plugin/core) package.
 
 ### From NPM
 
@@ -60,3 +60,5 @@ v5 - namespace based
 ```
 
 For a more complete example checkout the included json in the example folders, which makes use of the [Redux](https://github.com/rndm-render-plugin-redux) plugin.
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
