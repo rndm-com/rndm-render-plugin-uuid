@@ -1,8 +1,5 @@
 import validator from 'validator';
-import v1 from 'uuid/v1';
-import v3 from 'uuid/v3';
-import v4 from 'uuid/v4';
-import v5 from 'uuid/v5';
+import {v1, v3, v4, v5} from 'uuid';
 
 const methods = [
     {
